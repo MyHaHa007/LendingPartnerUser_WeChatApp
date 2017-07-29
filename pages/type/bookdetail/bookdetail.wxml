@@ -36,7 +36,7 @@
       {{summary}}        
             </scroll-view>
             
-        <!--喜欢本书的人也喜欢-->
+        <!--喜欢本书的人也喜-->
         <view class="extend_summary_like">
            <view class="extend_summary_like_text">喜欢本书的人也喜欢</view>
           <view class="extend_summary_like_book">
