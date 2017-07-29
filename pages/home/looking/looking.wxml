@@ -1,0 +1,29 @@
+<view class="container" style="display:{{showLooking}}">
+<form bindsubmit="submit">
+<checkbox-group bindchange="contentClick">
+    <label class="content" wx:for="{{items}}" id="{{index}}">
+       <checkbox class="icon" value="{{item.book_id}}" checked="{{checked}}" />
+       <view><image class="bookcover" src="{{item.book.images.medium}}"></image></view>
+      <view class="text">
+        <view class="book" id="bookname">{{item.book.title}}</view>
+        <view class="book">作者：{{item.book.authors[0]}}</view>
+        <view class="book">借阅时间：{{item.borrowed_time}}</view>
+      </view>      
+    </label>
+
+</checkbox-group>
+   <view class="container_footer">
+      <view class="checkbox" bindtap="checkboxselected">
+           <checkbox value="{{checkbox}}" checked="{{Allchecked}}" name="checkbox"/><text style="font-size:11pt;color:{{radiocolor}};">全选</text>
+      </view>
+      <view><button class="submitbuttum" style="display:{{confirm}};" form-type="submit">还书</button></view>
+   </view>
+        </form>
+</view>
+<view class="nocontainer" style="display:{{noLooking}}">
+              <view class="Img"><image src="../../images/tabbar/book/nobook.png"></image></view>
+            <view class="Img">{{text}}</view>
+</view>
+ <modal class="modal" style="display:{{modalFlag}}" no-cancel bindconfirm="modalOk">  
+    <canvas style=" width: 550rpx;height: 550rpx;" canvas-id="canvas" bindlongtap="canvasClick"/>
+   </modal>

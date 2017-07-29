@@ -1,0 +1,13 @@
+<view class="container">
+<form bindsubmit="submit">
+  <view class="input">
+    <input value="{{name}}" name="name"/>
+  </view>
+  <view class="text">
+    好名字可以让更多人关注你
+  </view>
+  <view class="save">
+     <button class="btn" form-type="submit">保存</button>
+  </view>
+  </form>
+</view>

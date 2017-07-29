@@ -1,0 +1,50 @@
+<view class="container">
+  <view class="content" bindtap="changeheading">
+     <view class="item">头像</view>
+     <view class="text"><image class="image"  src="{{userImg}}"></image></view>
+  </view>
+  <!--昵称-->
+  <navigator url="../../../../changename/changename">
+   <view class="content">
+      <view class="item">昵称</view>
+      <view class="text">{{name}}</view>
+   </view>
+   </navigator>
+<!--性别-->
+    <picker bindchange="sexChange" value="{{index}}" range="{{array}}">
+   <view class="content">
+    <view class="item">性别</view>        
+      <view class="text">{{array[index]}}</view>
+      </view>
+        </picker>
+        <!--个人签名-->
+     <navigator url="../../../../changeautograph/changeautograph">
+   <view class="content">
+      <view class="item">个人签名</view>
+      <view class="text">{{autograph}}</view>
+   </view>
+    </navigator>
+<!--出生年月-->
+<!--<picker bindchange="bornchange" mode="date" value="{{date}}">
+   <view class="content">
+      <view class="item">出生年月</view>
+      <view class="text">{{date}}</view>
+   </view>
+   </picker>-->
+<!--所在地-->
+<navigator url="../../../../changeplace/changeplace">
+   <view class="content">
+      <view class="item">所在地</view>
+      <view class="text">{{place}}</view>
+   </view>
+   </navigator>
+   <!--学历-->
+   <!--<picker bindchange="recordchange" value="{{myrecord}}" range="{{record}}">
+   <view class="content">
+      <view class="item">学历</view>
+      <view class="text">{{record[myrecord]}}</view>
+   </view>
+   </picker>-->
+</view>
+
+ 

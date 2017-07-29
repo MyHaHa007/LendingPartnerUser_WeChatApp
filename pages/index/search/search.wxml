@@ -1,0 +1,34 @@
+<view class="container">
+ <form bindsubmit="submit"> 
+   <view class="container_header">
+   <view class="find">
+    <view class="find_icon"><icon type="search" size="15" /></view>
+     <view class="find_input"><input placeholder="输入关键字" name="keyword" value="{{keyword}}" confirm-type="search"/></view>
+   </view>
+    <view><button class="find_button" form-type="submit">搜索</button></view>
+   </view>
+</form>
+
+  <!--=======================count=0=========================-->
+  <view class="content_text" style="display:{{minCount}}">
+     <view class="image"><image src="{{img}}"></image></view>
+     <view class="image">{{content}}</view>
+  </view>
+  <!--=======================count>0============================-->
+   <scroll-view  class="find_content" style="display:{{maxCount}};width:{{scrollWidth}}px;height:{{scrollHeight}}px;" scroll-y="true" scroll-top="{{scrollTop}}" bindscroll="scroll" >
+      <view class="content" wx:for="{{items}}" bindtap="click" id="{{index}}">
+        <view class="bookcover_image"><image class="bookcover" src="{{item.images.medium}}"></image></view>
+          
+      <view class="sumary_text">
+        <view class="booktext" id="bookname">{{item.title}}</view>
+        <view class="booktext"><text>{{item.authors}}</text></view> 
+        <view class="booktext"><text>馆藏总数:{{item.sum}}</text></view>
+        <view class="booktext"><text>可借数量：{{item.amount}}</text></view>
+        <view class="booktext" id="summary"><text>{{item.summary}}</text></view>     
+   </view> 
+ </view>
+    </scroll-view>
+     <view class="gotoTop" style="display:{{gotoTop}}" bindtap="goTopFun">
+       <image src="../../images/tabbar/type/gotoTop.png"></image>
+    </view>
+</view>

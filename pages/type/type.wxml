@@ -1,0 +1,31 @@
+<view class="container">
+ <form bindsubmit="find">
+     <navigator url="../type/keyword/keyword">
+ <view class="container_header">
+   <view class="find">
+    <view class="find_icon"><icon type="search" size="15" /></view>
+     <view class="find_input"><input placeholder="输入关键字" name="keyword" value="{{keyword}}" bindtap="inputClick" /></view>
+   </view>
+    <view><button class="find_button" form-type="find">搜索</button></view>
+   </view>
+       </navigator>
+     </form>
+   <view class="container_body">
+      <view class="title">
+      <view class="content_heading">
+        <view class="heading" wx:for="{{items}}" >
+       <view class="title_name {{currentId==index?'currentcolor':''}}" id="{{index}}" bindtap="checkcolor">{{item.super_class}}</view>
+        </view>
+        </view>
+        <scroll-view class="container_footer" scroll-y="true" style="width:{{scrollWidth}}px;height:{{scrollHeight}}px;">
+        <view class="content_type">        
+               <view class="type" wx:for="{{lists}}">
+                   <view class="title_content" bindtap="content_type" id="{{index}}">{{item}}</view>
+               </view>
+           </view>
+        </scroll-view>
+      </view>
+   </view>
+</view>
+
+  

@@ -1,0 +1,105 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;
+    height: 100rpx;
+    background: #39904F;
+    display: flex;
+    flex-direction: row;
+     align-items: center;
+    justify-content: center;
+}
+swiper{
+    width: 100%;
+    height: 300rpx;
+    background: red;
+}
+image{
+    width: 100%;
+    height: 300rpx;
+}
+.find{
+    width:80%;
+    height: 60rpx;
+    background: white;
+    display: flex;
+    padding: 5rpx;
+    border-radius: 20rpx;
+    flex-direction: row;
+}
+.search{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.find_icon{
+    
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+.find .input{
+    width: 100%;
+    margin-top: 5rpx;
+    margin-left: 10rpx;
+}
+.find_saoma{
+    width: 65rpx;
+    height: 29px;
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+.find_camera{
+    width: 50rpx;
+    height: 25px;
+    padding-right: 10rpx;
+}
+.container_body{
+    padding: 15rpx;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 20rpx;
+    color: darkseagreen;
+    border-bottom: 2rpx solid #eee;
+}
+.container_footer{
+    width: 100%;
+    height: 150rpx;
+    margin: 10rpx;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2rpx solid #eee;
+}
+.bookcover{
+    width: 200rpx;
+    height: 250rpx;
+    display: flex;
+    align-items: center;
+    margin: 15rpx;
+}
+.content_text{
+  padding: 0 10rpx;
+  margin-right: 20rpx;
+}
+.text{
+    font-size: 10pt;
+    margin-top: 10rpx;
+}
+.bookname{
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 20rpx;
+  font-family: YouYuan;
+}
+#summary{
+    height: 110rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+

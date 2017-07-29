@@ -1,0 +1,83 @@
+<view class="container">
+   <view class="bookdetail">
+      <view class="bookdetail_bookcover">
+         <view class="bookdetail_left">
+         <view class="book">
+         <image class="bookcover" src="{{image}}"></image></view>
+         <!--<view class="book">
+            <button class="bnt_book" bindtap="book_book">收  藏</button>
+         </view>-->
+         </view>
+
+      </view>
+
+      <view class="bookdetail_summary">
+         <view class="summary" id="summary"><text class="text">{{title}}</text></view>
+         <view class="summary"><text>作者：</text>{{author}}</view>
+         <view class="summary"><text>出版社：</text>{{publisher}}</view>
+         <view class="summary"><text>ISBN号：</text>{{isbn}}</view>
+          <!--<view class="summary"><text>馆藏：</text>{{book_id}}  </view>-->
+         <view class="summary"><text>馆藏总数：{{sum}}</text></view>
+         <view class="summary"><text>可借数量：{{amount}}</text></view>
+      </view>
+   </view>
+
+<!--==========================单击=============================-->
+   <view class="bookdetail_extend">
+      <view class="bookdetail_extend_tab" wx:for="{{lists}}">
+         <view class="extend {{currentId==index?'active' : ''}}" bindtap="extendClick" id="{{index}}">{{item}}</view>
+      </view>
+    </view>
+
+    <view class="bookdetail_extend_tab_content">
+    <!--简介-->
+         <view class="extend_summary_content" style="display:{{showSummary}}">
+            <scroll-view class="scroll_summary" scroll-y="true" style="height : 500rpx;">
+      {{summary}}        
+            </scroll-view>
+            
+        <!--喜欢本书的人也喜欢-->
+        <view class="extend_summary_like">
+           <view class="extend_summary_like_text">喜欢本书的人也喜欢</view>
+          <view class="extend_summary_like_book">
+              <view class="extend_summary_like_bookname">
+                 <image style="width:180rpx;height:200rpx;" src="../../images/tabbar/home/head.jpg"></image>
+              </view>
+           </view>
+        </view>
+         </view>
+
+    <view class="extend_Preview_content">
+    <!--预览-->
+         <view class="firstcatalog" style="display:{{showPreview}}" bindtap="firstcatalog">{{firstcatalog}}</view>
+         <view class="extend_Preview_content_catalog" style="display:{{showPreview}}" wx:for="{{catalog}}">
+           <view class="catalog">{{item}}</view>
+         </view>
+         <!--书评-->
+         <view class="extend_assess_content" style="display:{{showAssess}}">
+  <!--====================取消登录/取消登录============================-->
+         <view class="nodiscuss" style="display:{{show_nodiscuss}}">
+            <view class="nodiscussImg"><image src="../../images/tabbar/book/nobook.png"></image></view>
+            <view class="nodiscussImg">{{text}}</view>
+         </view>
+    
+<!--=======================评论列表不为零==============================-->
+       <view class="extend_assess_content_discuss" style="display:{{show_discuss}}" >
+           <view class="discuss" wx:for="{{reviews}}" id="{{index}}">
+              <view class="user_discuss">
+                 <view class="userImg"><image src="../../images/tabbar/home/userImg.png"></image></view>
+                 <view class="user_name">{{item.reviews_id}}楼</view>
+              </view>
+              <view class="userDiscuss">{{item.body}}</view>
+           </view>
+      </view>
+           <form bindsubmit="submit">
+           <view class="extend_assess_content_footer">
+             <view class="extend_assess_content_footer_input"><input type="text" placeholder="说点什么吧..." name="discuss" value="{{discuss}}"/></view>
+             <view><button form-type="submit" type="primary" class="discuss_submit">提交</button></view>
+             </view>
+             </form>
+         </view>
+         </view>
+  </view>
+</view>

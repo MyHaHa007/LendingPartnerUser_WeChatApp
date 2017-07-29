@@ -1,0 +1,17 @@
+<view class="container">
+       <view class="content" bindtap="selected">
+       <view class="successicon"><icon type="{{icon}}" /></view>
+      <view><image class="bookcover" src="../../../images/tabbar/home/head.jpg"></image></view>
+      <view class="text">
+        <view class="bookname">111{{bookname}}</view>
+        <view class="authod">222{{authod}}</view>
+        <view class="sourse">333{{sourse}}</view>
+      </view>
+   </view>
+      <view class="container_footer">
+     <view class="allselected">
+      <radio value="{{radio}}" checked="{{checked}}"/><text style="font-size:11pt;color:{{radiocolor}};">全选</text>
+      </view>
+     <view><button class="cancle">删除</button></view>
+   </view>
+</view>

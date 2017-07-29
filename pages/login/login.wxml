@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="menu">
+    <view class="menu_item" bindtap="login">登录</view>
+        </view>
+   <!--=====================================================-->
+        <view class="show_menu_item">
+          <!--===========登录============-->
+           <view class="show_login" style="display : {{show_login}}">
+             <form bindsubmit="submit">
+              <view class="show"><input type="number" name="username" value="{{username}}" placeholder="请输入手机号码" /></view>
+              <view class="show"><input type="password" value="{{password}}" name="password" placeholder="请输入密码" /></view>            
+        <view class="AutonLogin_remenber">
+              <!--<view class="radio" bindtap="radio"><radio value="{{radio}}" checked="{{AutoLogin}}" />下次自动登录</view>-->
+ <navigator url="../login/register/register">
+                <view class="show_register">去注册</view>
+                </navigator>
+              <navigator url="../login/remember/remember">
+              <view class="remenber" bindtap="remenber"><text>忘记密码？</text></view>
+              </navigator>
+        </view>
+        <view class="login"><button type="primary" form-type="submit">登录</button></view>
+        </form>
+       
+           </view>
+           <view class="content">{{content}}</view>
+        </view>
+</view>

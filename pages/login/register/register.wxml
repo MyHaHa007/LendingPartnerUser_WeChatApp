@@ -1,0 +1,35 @@
+<view class="container">
+ <!-- <view class="register">  
+   <view class="register_telphone" id="telphone" style="color:{{telphonecolor}};border-bottom:{{telphoneborder}}" bindtap="telphone">手机注册</view>
+   <view class="register_weixin" style="color:{{weixincolor}};border-bottom:{{weixinborder}}" bindtap="weixin">微信注册</view>
+   </view>-->
+
+      <!--=====================手机注册======================-->
+      <view class="show_register">
+          <view class="show_register_telphone" style="display:{{show_register_telphone}}">
+          <form bindsubmit="submit">
+            <view class="register_information"><input type="text" placeholder="输入用户名" name="username" value="{{username}}"/></view>
+             <view class="register_information"><input type="number" placeholder="请输入常用的手机号码" name="telphone" value="{{telphone}}"/></view>
+             <view class="register_information"><input type="password" placeholder="设置新密码" name="password" value="{{password}}" /></view>
+             <view class="register_information"><input type="password" placeholder="确认新密码" name="firmpassword" value="{{firmpassword}}" /></view>
+             <view class="register_information"><input type="text" placeholder="请输入邮箱地址" name="email" value="{{email}}" /></view>
+             <view class="register_agreement"><checkbox checked="{{checkboxCheck}}" bindtap="checkboxCheck" /><text bindtap="checkboxCheck">我已阅读并同意</text><text class="agreement" bindtap="agreement">图书馆协议</text></view>
+             <view><button class="register_button" type="primary" form-type="submit" disabled="{{disabled}}">立即注册</button></view>
+           
+             <view bindtap="Login"><button class="register_button" type="default">已有帐号？去登录</button></view>
+             </form>
+          </view>     
+   <!--===================微信注册=========================--> 
+          <!--<view class="show_register_weixin" style="display:{{show_register_weixin}}">
+              <form bindsubmit="weixinsubmit">
+                 <view class="register_information"><input type="number" placeholder="请输入常用的手机号码" name="weixintelphone" value="{{weixintelphone}}"/></view>
+                 <view class="register_information"><input type="text" placeholder="请输入邮箱地址" name="weixinemail" value="{{weixinemail}}" /></view>
+                 <view class="register_place">
+                   <input type="text"  name="weixinplace" value="{{weixinplace}}" placeholder="所在地"/></view>
+                 <view class="register_agreement" bindtap="checkboxCheck"><checkbox checked="{{checkboxCheck}}" />我已阅读并同意<text>图书馆协议</text></view>
+                 <view><button class="register_button" type="primary" form-type="weixinsubmit" disabled="{{disabled}}">立即注册</button></view>
+              </form>
+          </view>-->
+          <view class="content">{{content}}</view>
+      </view>
+</view>

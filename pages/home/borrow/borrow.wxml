@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="borrow">已借阅</view>
+       <view class="content">
+      <view><image class="bookcover" src="../../images/tabbar/home/head.jpg"></image></view>
+      <view class="text">
+        <view class="bookname">111{{bookname}}</view>
+        <view class="authod">222{{authod}}</view>
+        <view class="sourse">333{{sourse}}</view>
+      </view>
+      </view>
+</view>

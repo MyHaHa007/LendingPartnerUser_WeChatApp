@@ -1,0 +1,151 @@
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container_head{
+     width: 700rpx;  
+     margin: 0 auto;    
+     margin-bottom: 100rpx;
+}
+.bookstore{
+   padding: 15rpx;
+   border-bottom: 2rpx solid #eee;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 11pt;
+    padding: 10rpx 0;
+    border-bottom: 2rpx solid #eee; 
+    overflow:hidden;  
+    z-index: 2;
+}
+/*================删除按钮=====================================*/
+.del{
+  position: absolute;
+   width: 150rpx;
+    line-height: 70rpx;
+    text-align: center;   
+    right: 0;  
+    color: #fff;
+    z-index: 4;
+    border-radius: 10rpx;
+    background: rgba(255, 0, 0, 0.7);
+    margin-right: 20rpx;
+    
+}
+.bookcover{
+    width: 160rpx;
+    height: 180rpx;
+    display: flex;
+    align-items: center;
+    margin: 10rpx;
+    z-index: 4;
+}
+
+.book{
+  margin: 10rpx 0;
+  font-size: 11pt;
+}
+#bookname{
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: YouYuan;
+}
+#summary text{
+    font-size: 11pt;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+.text{
+    width: 60%;
+    padding: 0 20rpx;
+}
+.images{
+    background: #eee;
+}
+.add_decrease{
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx;
+    align-items: center;
+}
+.add_decrease image{
+    width: 50rpx;
+    height: 22px;
+    align-items: center;
+}
+.input{
+    width: 100rpx;
+    text-align: center;
+    border: 2rpx solid #eee;
+    align-items: center;
+}
+.container_footer{
+    position:fixed;
+    bottom: 0rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 100rpx;
+    background: white;
+}
+.icon{
+    margin-left: 20rpx;
+    border-radius: 100%;
+}
+.checkbox{
+    width: 80%;
+    padding: 0 20rpx;
+}
+.empty,.submitbuttum{
+    width: 150rpx;
+    background: #39904F;
+    font-size: 11pt;
+    line-height: 70rpx;
+    margin:0 10rpx;
+}
+.editor{
+    width: 100%;
+    height: 70rpx;
+    background: #eee;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.editorselected,.finished{
+    padding: 20rpx;
+}
+.no_book_bar{
+  width: 100%;
+  height: 100%;
+  margin-top: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no_book_bar_Img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #707070;
+  font-size: 11pt;
+}
+.no_book_bar_Img image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx 20rpx;
+
+}

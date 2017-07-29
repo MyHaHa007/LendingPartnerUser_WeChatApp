@@ -1,0 +1,101 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container_header{
+  position: fixed;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    font-size: 11pt;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2rpx solid  darkgray;
+    background: white;
+}
+.find{
+    width: 75%;
+    height: 70rpx;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 20rpx;
+    border: 2rpx solid #eee;
+}
+.find_icon{
+    margin-top: 15rpx;
+    margin-left: 20rpx;
+}
+.find_input{
+    width: 100%;
+    margin-top: 9rpx;
+    margin-left: 10rpx;
+}
+.find_button{
+    width: 150rpx;
+    background: #39904F;
+    font-size: 11pt;
+    line-height: 70rpx;
+    margin-left: 20rpx;
+}
+.container_body{
+   position: fixed;
+    top: 100rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+   width: 100%;  
+   height: 100rpx; 
+   padding: 10rpx 10rpx;
+   display: flex;
+   flex-direction: row;
+}
+.content_heading{
+    width: 30%;
+    z-index: -1;
+}
+.heading{
+   display: flex;
+   align-items: center;
+   font-size: 11pt;
+   padding: 20rpx 0;
+   border-right: 2rpx solid #eee;
+}
+.title_name{
+    width: 100%;
+    line-height: 60rpx;
+    text-align: center;
+    overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+.container_footer{
+   width: 70%;
+   padding-bottom: 20rpx;
+   background: white;
+}
+.content_type{
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;   
+}
+.title_content{
+    width: 200rpx;
+    height: 60rpx;
+    font-size: 10pt;
+    text-align: center;
+    margin: 10rpx 10rpx;
+    padding: 5rpx;
+    flex-direction: row;
+    overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+.currentcolor{
+   color: red;
+   border-left: 2rpx solid red;
+}

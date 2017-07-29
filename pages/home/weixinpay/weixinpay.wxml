@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="container_header">
+     <view class="text">
+       <view class="confirm"><text>确认交易</text></view>
+       <view class="weixin"><text>微信安全支付</text></view>
+     </view>
+  </view>
+
+  <view class="container_body">
+  <view class="jin_e">
+    <view class="jin_e_text"><text>提交定金（超期限还书按0.05%/天倒扣）</text></view>
+    <view class="jin_e_text" style="font-size:16pt;">$<text>30.00</text></view>
+    </view>
+  </view>
+
+  <view class="container_footer">
+    <view class="side">
+      <view class="side_left"><text>收款方</text></view>
+      <view class="side_right"><text>微信支付</text></view>
+    </view>
+  </view>
+<!--=============立即支付========================================-->
+<navigator url="../../../../weixinpaySecrit/weixinpaySecrit">
+<button type="primary">立即支付</button>
+</navigator>
+</view>

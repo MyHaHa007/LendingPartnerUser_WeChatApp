@@ -1,0 +1,68 @@
+{
+  "pages":[              
+        "pages/index/index",
+        "pages/logs/logs",        
+        "pages/type/type",
+        "pages/home/home",     
+        "pages/login/login",
+        "pages/book/book",
+        "pages/index/search/search",
+        "pages/home/collect/collect",
+        "pages/home/weixinpay/weixinpay",
+        "pages/home/weixinpay/weixinpaySecrit/weixinpaySecrit",
+        "pages/home/borrow/borrow",
+        "pages/home/data/data",
+        "pages/home/secret/secret",
+        "pages/home/help/help",
+        "pages/home/update/update",
+        "pages/home/custom/custom",
+        "pages/home/looking/looking",
+        "pages/home/collect/editor/editor",
+        "pages/line/line",
+        "pages/type/keyword/keyword",
+        "pages/type/typeresult/typeresult",
+        "pages/type/bookdetail/bookdetail",
+        "pages/home/data/changename/changename",
+        "pages/home/data/changeautograph/changeautograph",
+        "pages/home/data/changeplace/changeplace",
+        "pages/home/data/changecity/changecity",
+        "pages/login/remember/remember",
+        "pages/login/register/register",
+        "pages/login/weixin/weixin",
+        "pages/login/agreement/agreement"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#39904F",
+    "navigationBarTitleText": "图书馆",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor" : "#39904F",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath" : "pages/images/tabbar/home.png",  
+      "selectedIconPath" : "pages/images/tabbar/homeselected.png"  
+    },
+    {
+       "pagePath": "pages/type/type",
+      "text": "分类",
+       "iconPath" : "pages/images/tabbar/type.png",  
+      "selectedIconPath" : "pages/images/tabbar/typeselected.png"  
+    },
+    {
+      "pagePath": "pages/book/book",
+      "text": "书架" ,        
+      "iconPath" : "pages/images/tabbar/book.png",  
+      "selectedIconPath" : "pages/images/tabbar/bookselected.png"
+    },
+     {"pagePath": "pages/home/home",
+      "text": "我" ,        
+      "iconPath" : "pages/images/tabbar/mine.png",  
+      "selectedIconPath" : "pages/images/tabbar/mineselected.png"  
+     }]
+  }
+
+}

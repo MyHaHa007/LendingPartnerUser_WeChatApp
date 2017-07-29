@@ -1,0 +1,6 @@
+<view class="container">
+   <view class="content">
+      <view class="item">字体大小</view>
+      <view class="item">模式设置</view>
+   </view>
+</view>

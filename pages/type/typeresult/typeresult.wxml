@@ -1,0 +1,17 @@
+<view class="container">
+   <scroll-view style="width:{{scrollWidth}}px;height:{{scrollHeight}}px;" scroll-y="true" scroll-top="{{scrollTop}}" bindscrolltolower="onPullDownRefresh" bindscrolltoupper="onReachBottom" bindscroll="scroll">
+      <view class="content" wx:for="{{items}}" bindtap="click" id="{{index}}">
+        <view class="image"><image class="bookcover" src="{{item.image}}"></image></view>
+          
+      <view class="text">
+        <view class="booktext" id="bookname">{{item.title}}</view>
+        <view class="booktext"><text>{{item.author}}</text></view> 
+        <view class="booktext">{{item.rating.average}}</view>
+        <view class="booktext" id="summary"><text>{{item.summary}}</text></view>      
+   </view>
+ </view>
+    </scroll-view>
+    <view class="gotoTop" style="display:{{gotoTop}}" bindtap="goTopFun">
+       <image src="../../images/tabbar/type/gotoTop.png"></image>
+    </view>
+</view>

@@ -1,0 +1,86 @@
+<view class="container">
+  <view class="container_head">
+     <view class="images"><image src="{{homeuserImg}}"></image></view>
+      <!--未登录-->
+     <view class="nodata" style="display:{{shownodata}}">
+       <view class="data_icon">
+        <navigator url="../login/login">
+        <view class="dataname"><text class="login">未登录</text></view>
+        </navigator>
+        </view>
+     </view>
+     <!--已登录-->
+     <view class="data" style="display:{{showdata}}" bindtap="dataa">
+        <view class="data_icon">
+        <view class="userid">用户ID：{{userid}}</view>
+        <view class="dataname">{{username}}</view>
+        <!--<view><image src="{{member}}"></image></view>-->
+        </view>
+        <!--<view class="dataexplain">{{dataexplain}}</view>-->
+     </view>
+  </view>
+  <view class="container_body">
+      <navigator url="../home/collect/collect">
+       <view class="content">
+          <view class="item"><image src="../images/tabbar/home/collect.png"></image></view>
+          <view class="text" ><text>收藏</text></view>
+          <view class="img"><image src="../images/tabbar/home/goto.png"></image></view>
+      </view>
+      </navigator>
+<!--==================微信支付=====================================-->
+            <navigator url="../home/weixinpay/weixinpay">
+       <view class="content">
+          <view class="item"><image src="../images/tabbar/home/yajin.png"></image></view>
+          <view class="text" ><text>押金详情</text></view>
+                    <view class="img"><image src="../images/tabbar/home/goto.png"></image></view>
+      </view>
+      </navigator>
+           <navigator url="../home/looking/looking">
+      <view class="content">
+          <view class="item"><image src="../images/tabbar/home/borrow.png"></image></view>
+          <view class="text"><text>目前借阅</text></view>
+                    <view class="img"><image src="../images/tabbar/home/goto.png"></image></view>
+      </view>
+      </navigator>
+      <navigator url="../home/borrow/borrow">
+       <view class="content">
+          <view class="item"><image src="../images/tabbar/home/book.png"></image></view>
+          <view class="text"><text>借阅历史</text></view>
+                    <view class="img"><image src="../images/tabbar/home/goto.png"></image></view>
+      </view>
+      </navigator>
+      <!--<navigator url="../home/data/data">
+       <view class="content">
+          <view class="item"><image src="../images/tabbar/home/data.png"></image></view>
+          <view class="text"><text>个人资料</text></view>
+      </view>
+      </navigator>-->
+      <navigator url="../home/secret/secret">
+       <view class="content">
+          <view class="item"><image src="../images/tabbar/home/secret.png"></image></view>
+          <view class="text"><text>隐私设置</text></view>
+                    <view class="img"><image src="../images/tabbar/home/goto.png"></image></view>
+      </view>
+      </navigator>
+      <!--<navigator url="../home/help/help">
+      <view class="content">
+          <view class="item"><image src="../images/tabbar/home/help.png"></image></view>
+          <view class="text"><text>辅助功能</text></view>
+      </view>
+      </navigator>-->
+      <!--<navigator url="../home/update/update">
+      <view class="content">
+          <view class="item"><image src="../images/tabbar/home/update.png"></image></view>
+          <view class="text"><text>检查更新</text></view>
+      </view>
+      </navigator>-->
+      <navigator url="../home/custom/custom">
+      <view class="content">
+          <view class="item"><image src="../images/tabbar/home/custom.png"></image></view>
+          <view class="text"><text>反馈</text></view>
+                    <view class="img"><image src="../images/tabbar/home/goto.png"></image></view>
+      </view>
+      </navigator>
+     
+  </view>
+</view>

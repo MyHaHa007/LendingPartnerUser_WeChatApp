@@ -1,0 +1,39 @@
+<view class="container">
+ <view class="header">
+ <view class="find">
+   <view class="search">
+   <view class="find_icon"><icon type="search" size="15" color="{{item}}"/></view>
+   <view class="input"><input style="font-size:11pt;" placeholder="输入图书信息" bindinput="search_input" value="{{search_input}}" name="search_input" bindconfirm="search_confirm" confirm-type="search"></input></view>
+   </view>
+   <view class="find_camera" bindtap="camera"><image class="find_camera" src="../images/tabbar/index/camera.png"></image></view>
+   </view>
+   <view bindtap="saoma"><image class="find_saoma" src="../images/tabbar/index/saoma.png"></image></view>
+ </view>
+
+  <view class="images">
+    <swiper indicator-dots="true"
+  autoplay="true" circular="true" indicator-color="rgba(0, 0, 0, .3)" indicator-active-color="#000000" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+  </view>
+
+<view class="container_body">
+   <view><text>精品推荐</text></view>
+</view>
+
+<view class="container_footer">
+   <view class="content" bindtap="recommend" wx:for="{{items}}" id="{{index}}">
+        <view><image class="bookcover" src="{{item.images.medium}}"></image></view>
+      <view class="content_text">
+        <view class="bookname">{{item.title}}</view>
+        <view class="text">作者：{{item.authors[0]}}</view>
+        <view class="text">馆藏数量：{{item.amount}}</view>
+        <view class="text" id="summary"><text class="summary">简介：{{item.summary}}</text></view>
+      </view>
+   </view>
+</view>
+</view>

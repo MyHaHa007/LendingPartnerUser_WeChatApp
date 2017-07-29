@@ -1,0 +1,54 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container_head{
+    width:100%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2rpx solid #eee;
+}
+.find{
+     width: 80%;
+    height: 70rpx;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20rpx;
+    align-items: center;
+    border: 2rpx solid #eee;
+}
+.editor{
+    margin-left: 20rpx;
+    font-size: 11pt;
+}
+.find_icon{
+    margin: 0 20rpx;
+}
+.container_body{
+    width: 100%;
+    padding: 20rpx;
+    margin: 20rpx;
+    align-items: center;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2rpx solid #eee;
+}
+.bookcover{
+    width: 130rpx;
+    height: 130rpx;
+    display: flex;
+    align-items: center;
+    margin: 15rpx;
+}
+.text{
+    padding: 10rpx;
+}

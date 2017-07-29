@@ -1,0 +1,41 @@
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2rpx solid #eee;
+}
+.bookcover{
+    width: 130rpx;
+    height: 130rpx;
+    display: flex;
+    align-items: center;
+    margin: 15rpx;
+}
+.text{
+    padding: 10rpx;
+}
+.successicon{
+    margin-left: 20rpx;
+}
+.container_footer{
+    width: 100%;
+    height: 100rpx;
+    position: fixed;
+    bottom: 0rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #eee;
+}
+.allselected{
+    width: 80%;
+    margin: 0 20rpx;
+}
+.cancle{
+    width: 150rpx;
+    background: #39904F;
+    font-size: 11pt;
+    line-height: 70rpx;
+    margin:0 20rpx;
+}

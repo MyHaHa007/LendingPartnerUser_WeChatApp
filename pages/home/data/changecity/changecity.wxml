@@ -1,0 +1,6 @@
+<view class="container">
+   <view class="content" wx:for="{{citys}}">
+      <view class="item" bindtap="citysClick" id="{{index}}">{{item.name}}
+      </view>         
+   </view>
+</view>

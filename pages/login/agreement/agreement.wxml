@@ -1,0 +1,64 @@
+<view class="container">
+   <view class="container_header">合作协议</view>
+   <view class="container_body">
+   <view class="container_body_header">为了同完成该县图书馆图书的更换，甲乙双方本着平等互利，共同发展，优势互补的原则，经友好协商，在合作意向上达成一致，结为合作伙伴，甲方以协议规定的方式，向乙方有图书更换服务。现就双方合作的具体事宜及双方的权力与义务达成如下协议：</view>
+   <view class="content">
+      <view class="content_item">第一条：甲方的职责</view>
+      <view class="content_item_text">1．为乙方提供专业的图书更换服务。</view>
+      <view class="content_item_text">2．为乙方提供工作场所。</view>
+      <view class="content_item_text">3．配合乙方的工作。</view>
+   </view>
+
+    <view class="content">
+      <view class="content_item">第二条：乙方的职责</view>
+      <view class="content_item_text">1．协助甲方工作。</view>
+      <view class="content_item_text">2．为甲方提供力所能及的帮助。</view>
+      <view class="content_item_text">3．在合同规定期限内完成图书更换、上架、整理等工作。</view>
+   </view>
+
+    <view class="content">
+      <view class="content_item">第三条：声明</view>
+      <view class="content_item_text">1．甲乙双方之间结为合作伙伴关系。</view>
+      <view class="content_item_text">2．甲乙双方就各自的工作和提供的服务内容承担责任，享有收益。</view>
+      <view class="content_item_text">3．本协议期限满，双方优先考虑与对方续约合作。</view>
+      <view class="content_item_text">4．双方的合作关系是互利互惠的。</view>
+   </view>
+
+       <view class="content">
+      <view class="content_item">第四条：协议执行期限，本协议书有效期为 年 月 日 年 月 日为本协议商定合作方案的执行期限。</view>      
+   </view>
+
+       <view class="content">
+      <view class="content_item">第五条：协议的终止。本协议因以下任何原因而终止：</view>
+      <view class="content_item_text">1．本协议期限届满。</view>
+      <view class="content_item_text">2．双方协商同意终止本合同。如有任何一方欲终止此合同，需提前一个星期通知对方。</view>
+      <view class="content_item_text">3．如乙方有不得不离开的理由，需提前一个星期通知对方，可终止协议。</view>     
+   </view>
+
+    <view class="content">
+      <view class="content_item">第六条：争议的解决</view>
+      <view class="content_item_text">如甲乙双方在本协议的条款范围内发生纠纷，应尽量协商解决，协商不能达成一致意见时，提请威宁仲裁委员会仲裁解决。</view>
+   </view>
+
+   <view class="content">
+      <view class="content_item">第七条：不可抗力</view>
+      <view class="content_item_text">因地震、火灾等自然灾害、战争、罢工、停电、政府行为等造成双方不能履行本协议义务，双方通过书面形式通知对方，本协议即告终止。</view>
+   </view>
+
+   <view class="content">
+      <view class="content_item">第八条：付款方式</view>
+      <view class="content_item_text">经双方协商决定在协议终止时，甲方一次性将工作期间的费用支付给乙方。</view>
+   </view>
+
+   <view class="content">
+      <view class="content_item">第九条：违约责任</view>
+      <view class="content_item_text">1.在规定期限内，已方未能完成工作范围内工作，甲方可扣缴总工资百分之十的违约金。</view>
+       <view class="content_item_text">2.在乙方工作完成并做好交接工作日起，七个工作日内未结清余款，延期一日甲方须向乙方缴纳百分之十的违约滞纳金。</view>
+   </view>
+
+      <view class="content">
+      <view class="content_item">第十条：本协议一式二份，双方各执一份，经双方签字盖章有效。本协议及其相关附件具有同等法律效率。</view>      
+   </view>
+   <view style="height:200rpx;"></view>
+   </view>
+</view>

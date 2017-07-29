@@ -1,0 +1,42 @@
+<view class="container">
+<!--====================book_bar=0==============================-->
+<view class="no_book_bar" style="display:{{shownodata}}">
+   <view class="no_book_bar_Img"><image src="{{img}}"></image></view>
+   <view class="no_book_bar_Img">{{text}}</view>
+</view>
+<!--=====================book_bar!=0=================================-->
+ <view class="book_bar" style="display:{{showdata}}">
+  <view class="container_head">
+
+  <form bindsubmit="submit">  
+   <view class="bookstore">bookstore{{bookstore}}</view>  
+<checkbox-group bindchange="contentClick">
+    <label class="content" wx:for="{{items}}" id="{{index}}" bindtouchstart="handStart" bindtouchmove="handMove" bindtouchend="handEnd" bindtouchcancel="handCanel" style="{{txtStyle}}">
+       <checkbox class="icon" value="{{item.book_id}}" checked="{{checked}}" />
+       <view><image class="bookcover" src="{{item.images.medium}}"></image></view>
+      <view class="text">
+        <view class="book" id="bookname">{{item.title}}</view>
+        <view class="book">作者：{{item.authors}}</view>
+        <view class="book" id="summary"><text>简介：{{item.summary}}</text></view>
+      </view>   
+      <view bindtap = "delItem" class="del" style="display:{{CurrentId==index?'block' : 'none'}}">删除</view>     
+    </label>
+
+</checkbox-group>
+
+   <view class="container_footer">
+      <view class="checkbox" bindtap="checkboxselected">
+           <checkbox value="{{checkbox}}" checked="{{Allchecked}}" name="checkbox"/><text style="font-size:11pt;color:{{radiocolor}};">全选</text>
+      </view>
+      <!--<view><button class="empty" bindtap="empty">清空</button></view>-->
+      <view><button class="submitbuttum" style="display:{{confirm}};" form-type="submit">确定</button></view>
+
+   </view>
+    </form>
+   </view>
+
+   <modal class="modal" style="display:{{modalFlag}}" no-cancel bindconfirm="modalOk">  
+    <canvas style=" width: 550rpx;height: 550rpx;" canvas-id="canvas" bindlongtap="canvasClick"/>
+   </modal>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+   <view class="content" wx:for="{{provinces}}">
+      <view class="item" bindtap="provincesClick" id="{{index}}">{{item.name}}
+      </view>         
+   </view>
+</view>

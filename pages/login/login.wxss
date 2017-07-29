@@ -1,0 +1,44 @@
+.menu{
+  width: 100%;
+  line-height: 60rpx;
+  padding: 10rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  background: #eee;
+  justify-content: center;
+}
+/*#image image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.menu_item{
+  width: 33%;
+}*/
+.show{
+  padding: 20rpx;
+  border: 2rpx solid #eee;
+  border-radius: 10rpx;
+  margin : 30rpx 30rpx;
+}
+.AutonLogin_remenber{
+  display: flex;
+  flex-direction: row;
+  margin: 40rpx 30rpx;
+}
+.remenber{
+  position: absolute;
+  right: 20rpx;
+}
+.login button{
+  margin:0  30rpx;
+}
+.show_register{
+  border-bottom: 2rpx solid black;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  color: red;
+  font-weight: bold;
+  margin-top: 400rpx;
+}
